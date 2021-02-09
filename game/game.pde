@@ -1,13 +1,13 @@
-PImage beach, bike;
+PImage beach,forest,city, bike;
 int i, j=1066;
 
 beach b;
 
 void setup() {
   size(1066, 600);
-  beach = loadImage("data/fonfo.png");
+  beach = loadImage("data/beach.png");
   b = new beach(beach, 0);
-  bike = loadImage("data/animated_bike.gif");
+  //bike = loadImage("data/animated_bike.gif");
 }
 
 void draw() {
