@@ -14,8 +14,8 @@ class beach {
     x-=v;
     x_2-=v;
 
-    image(beach, x, y+260, width+20, beach.height+65);
-    image(beach, x_2, y+80, width+60, beach.height+65);
+    image(beach, x, y, width+20, beach.height);
+    image(beach, x_2, y, width+60, beach.height);
 
     if ( x+beach.width <=  0) {
       x = width;
