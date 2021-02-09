@@ -1,12 +1,12 @@
-PImage ciud, bike;
+PImage beach, bike;
 int i, j=1066;
 
-ciud c;
+beach b;
 
 void setup() {
   size(1066, 600);
-  ciud = loadImage("data/fonfo.png");
-  c = new ciud(ciud, 0);
+  beach = loadImage("data/fonfo.png");
+  b = new beach(beach, 0);
   bike = loadImage("data/animated_bike.gif");
 }
 
@@ -14,12 +14,12 @@ void draw() {
 
   //}
 
-  c.display();
+  b.display();
 
   //image(bike, width - 128, 600-128);
 
   for (j=1066; j<0; j--) {
 
-    image(ciud, j, 0);
+    image(beach, j, 0);
   }
 }
