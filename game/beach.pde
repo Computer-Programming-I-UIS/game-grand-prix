@@ -14,10 +14,10 @@ class beach {
     x-=v;
     x_2-=v;
 
-    image(beach, x, y, width, beach.height);
-    image(beach, x_2, y, width, beach.height);
+    image(beach, x, y);
+    image(beach, x_2, y);
     
-    frameRate(100);
+    frameRate(40);
 
     if ( x+beach.width <=  0) {
       x = width;

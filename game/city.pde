@@ -14,8 +14,10 @@ class city {
     x-=v;
     x_2-=v;
 
-    image(city, x, y, width-70, city.height-113);
-    image(city, x_2, y, width-70, city.height-113);
+    image(city, x, y);
+    image(city, x_2, y);
+        frameRate(55);
+
 
     if ( x+city.width <=  0) {
       x = width;
