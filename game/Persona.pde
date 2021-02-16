@@ -32,8 +32,11 @@ class Person{
     if(keyCode == DOWN){
       image(person[imageIndex],x,y,a,h);
     }
-    else
+    
+      x = constrain(x,0,width-a);
+      
       image(person[imageIndex],x,y,a,h); 
+      
     }
 
   void caida(){
