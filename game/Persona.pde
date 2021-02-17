@@ -25,7 +25,7 @@ class Person{
       }
       if(keyCode == UP){ 
          if(y == height-200){
-          y = y -150;        
+          y = y -250;        
           //image(person[imageIndex],x,y,a,h);
         }
         //image(person[imageIndex],x,y,a,h);
@@ -38,6 +38,7 @@ class Person{
       x = constrain(x,0,width-a);
       
       image(person[imageIndex],x,y,a,h); 
+      noStroke();
       noFill();
       centroX = x+(a/2);
       centroY = y+(h/2);
