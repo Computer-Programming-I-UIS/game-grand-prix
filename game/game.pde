@@ -46,12 +46,12 @@ void setup() {
   corna = loadImage("data/corona.png");
   cor = new corona(corna, 470);
 
-  prize = loadImage("data/bonus.png");
+  prize = loadImage("data/bonus1 (2).png");
   p = new prize(prize, 300);
 
   switch (opc) {
   case 0:
-    beach_theme.play();
+    //beach_theme.play();
     break;
   case 1:
     beach_theme.play();
