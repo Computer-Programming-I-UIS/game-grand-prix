@@ -1,7 +1,10 @@
 # game-grand-prix
 
-    gerson sanchez 
-    santiago caballero
+    2192987 - Gerson Alexander Sanchez Brito
+    2182788  - Santiago Caballero Niño
+
+    
+    
 para el desarrollo de este juego es necesaria la libreria sound
 
 
