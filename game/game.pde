@@ -26,7 +26,7 @@ void setup() {
 
   menu = loadImage("new menu.jpg");
   menu_theme = new SoundFile(this, "data/theme.wav");
-
+ 
   beach = loadImage("data/playa.png");
   beach.resize(width, height);
   beach_theme = new SoundFile(this, "data/bTheme.wav");
