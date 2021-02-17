@@ -3,7 +3,7 @@ class prize {
   float y;
   int space = width;
   int x = width;
-  float v = 8;
+  float v = 20;
   prize (PImage pr, float Y) {
     y=Y;
     crona = pr;

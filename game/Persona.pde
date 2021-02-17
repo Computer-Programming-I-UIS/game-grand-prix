@@ -1,9 +1,11 @@
 class Person{
  float y;
- int x,a,h;
+ float x,a,h;
+ float centroX, centroY;
+ float radio;
   Person(int tx,float ty,int ta, int th){
-    x = tx;
-    y = ty;
+    this.x = tx;
+    this.y = ty;
     a = ta;
     h = th;
   }
@@ -13,29 +15,34 @@ class Person{
     if(keyPressed && key == CODED){
       if(keyCode == RIGHT&&keyCode != LEFT){
         x += 20;
-        image(person[imageIndex],x,y,a,h);
+        //image(person[imageIndex],x,y,a,h);
         imageIndex = (imageIndex+1)% person.length;
       }
       if(keyCode == LEFT&&keyCode != RIGHT){
        x -= 20;       
-       image(person[imageIndex],x,y,a,h);
+       //image(person[imageIndex],x,y,a,h);
        imageIndex = (imageIndex+1)% person.length;
       }
       if(keyCode == UP){ 
          if(y == height-200){
           y = y -150;        
-          image(person[imageIndex],x,y,a,h);
+          //image(person[imageIndex],x,y,a,h);
         }
-        image(person[imageIndex],x,y,a,h);
+        //image(person[imageIndex],x,y,a,h);
       }
     }
     if(keyCode == DOWN){
-      image(person[imageIndex],x,y,a,h);
+      //image(person[imageIndex],x,y,a,h);
     }
     
       x = constrain(x,0,width-a);
       
       image(person[imageIndex],x,y,a,h); 
+      noFill();
+      centroX = x+(a/2);
+      centroY = y+(h/2);
+      radio = a*0.8;
+      circle(centroX,centroY,a*0.8);
       
     }
 

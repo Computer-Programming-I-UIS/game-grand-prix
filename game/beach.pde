@@ -17,7 +17,7 @@ class beach {
     image(beach, x, y);
     image(beach, x_2, y);
     
-    frameRate(40);
+   //frameRate(80);
 
     if ( x+beach.width <=  0) {
       x = width;

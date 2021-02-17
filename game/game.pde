@@ -1,11 +1,12 @@
 import processing.sound.*;
 SoundFile beach_theme;
+SoundFile menu_theme;
 
 PImage beach, forest, city, bike, corna, prize, menu;
-int maxIm = 2;
+int maxIm = 9;
 PImage [] person = new PImage[maxIm];
 int opc=0;
-color b1, n1;
+color b1, b2, l1, l2;
 
 
 float gravedad = 0.4;
@@ -24,6 +25,7 @@ void setup() {
   size(1000, 600);
 
   menu = loadImage("new menu.jpg");
+  menu_theme = new SoundFile(this, "data/theme.wav");
 
   beach = loadImage("data/playa.png");
   beach.resize(width, height);
@@ -51,10 +53,16 @@ void setup() {
 
   switch (opc) {
   case 0:
-    //beach_theme.play();
+    beach_theme.play();
+    //menu_theme.play();
+
+
     break;
   case 1:
-    beach_theme.play();
+    beach_theme.pause();
+
+    menu_theme.pause();
+
     break;
   case 3:
     break;
@@ -64,18 +72,21 @@ void setup() {
 void draw() {
 
   switch(opc) {
-  case 0:
+  case 0: //menu
     background(0);
     image(menu, 185, 0);
     boton();
     break;
 
-  case 1:
+  case 1: //lvl1
     b.display();
     cor.display();
     p.display();
     p1.move();
     p1.caida();
+    float distancia = dist(p1.centroX, p1.centroY, cor.centroX, cor.centroY);
+    if (distancia < p1.radio+cor.radio)
+      opc = 0;
     break;
 
   case 2:
@@ -86,6 +97,14 @@ void draw() {
 
   case 3:
     //c.display();
+    break;
+
+  case 4:
+    background(255);
+    break;
+  case 5:
+    background(255);
+    creditos();
     break;
   }
 }
