@@ -39,6 +39,7 @@ void setup() {
   b = new beach(beach, 0);
 
   forest = loadImage("data/bosque.jpg");
+  forest.resize(width,height);
   f = new forest(forest, 0);
 
   city = loadImage("data/ciudad.png");

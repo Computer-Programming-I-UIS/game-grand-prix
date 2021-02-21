@@ -14,8 +14,8 @@ class forest {
     x-=v;
     x_2-=v;
 
-    image(forest, x, y, width-50, forest.height-115);
-    image(forest, x_2, y, width-50, forest.height-115);
+    image(forest, x, y);
+    image(forest, x_2, y);
     
     frameRate(80);
     if ( x+forest.width <=  0) {
