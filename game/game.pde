@@ -5,7 +5,7 @@ SoundFile menu_theme;
 PImage beach, forest, city, bike, corna, prize, menu;
 int maxIm = 9;
 PImage [] person = new PImage[maxIm];
-int opc=0;
+int opc=0, count;
 color b1, b2, l1, l2;
 
 
@@ -26,7 +26,7 @@ void setup() {
 
   menu = loadImage("new menu.jpg");
   menu_theme = new SoundFile(this, "data/theme.wav");
- 
+
   beach = loadImage("data/playa.png");
   beach.resize(width, height);
   beach_theme = new SoundFile(this, "data/bTheme.wav");
@@ -87,12 +87,20 @@ void draw() {
     float distancia = dist(p1.centroX, p1.centroY, cor.centroX, cor.centroY);
     if (distancia < p1.radio+cor.radio)
       opc = 0;
+    else 
+    count++;
+    if (count > 2000)
+      opc =2;
+    println(count);
     break;
 
   case 2:
 
-    //f.display();
-
+    f.display();
+    cor.display();
+    p.display();
+    p1.move();
+    p1.caida();
     break;
 
   case 3:
