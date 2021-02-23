@@ -13,20 +13,16 @@ class corona {
     this.radio = p.width/2;
   }
 
-  void display() {
-
-
+  void covid() {
     x -= v;
     image(prze, x, y);
     centroX = x + prze.width/2;
     centroY = y + prze.height/2;
+    circle(centroX,centroY,radio);
 
     if ( x <=  0) {
       x =int(random(width, width+(width/2)+12));
     }
 
-    //if ((Person.x > x+77)&& (Person.y > y ) && (Person.y < y+70)) {
-    //  opc =4;
-    //}
   }
 }

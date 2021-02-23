@@ -30,7 +30,7 @@ void setup() {
   beach = loadImage("data/playa.png");
   beach.resize(width, height);
   beach_theme = new SoundFile(this, "data/bTheme.wav");
-  
+
   foto = loadImage("instruc.png");
 
   p1 = new Person(100, height-200, 160, 160);
@@ -41,7 +41,7 @@ void setup() {
   b = new beach(beach, 0);
 
   forest = loadImage("data/bosque.jpg");
-  forest.resize(width,height);
+  forest.resize(width, height);
   f = new forest(forest, 0);
 
   city = loadImage("data/ciudad.png");
@@ -84,31 +84,43 @@ void draw() {
 
   case 1: //lvl1
     b.display();
-    cor.display();
+    cor.covid();
     p.clean();
     p1.move();
     p1.caida();
+    cambio();
     float distancia = dist(p1.centroX, p1.centroY, cor.centroX, cor.centroY);
     if (distancia < p1.radio+cor.radio)
       opc = 0;
     else 
     count++;
-    if (count > 2000)
-      opc =2;
-    println(count);
+
+
     break;
 
   case 2:
 
     f.display();
-    cor.display();
+    cor.covid();
     p.water();
     p1.move();
     p1.caida();
+    cambio();
+    float dist2 = dist(p1.centroX, p1.centroY, cor.centroX, cor.centroY);
+    if (dist2 < p1.radio+cor.radio) 
+      opc = 0;
+    else 
+    count++;
+
+
     break;
 
   case 3:
-    //c.display();
+    c.display();
+    cor.covid();
+    p.water();
+    p1.move();
+    p1.caida();
     break;
 
   case 4:
@@ -123,4 +135,14 @@ void draw() {
     instrucciones();
     break;
   }
+  println(count);
+}
+void cambio() {
+  if (count > 2000) {
+    opc =2;
+  }
+  if (count > 4000) {
+    opc =3 ;
+  }
+  println(count);
 }

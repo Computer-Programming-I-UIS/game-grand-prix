@@ -43,7 +43,7 @@ class Person{
       centroX = x+(a/2);
       centroY = y+(h/2);
       radio = a*0.8;
-      circle(centroX,centroY,a*0.8);
+      //circle(centroX,centroY,a*0.8);
       
     }
 
