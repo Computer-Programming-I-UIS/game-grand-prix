@@ -3,6 +3,7 @@ SoundFile beach_theme;
 SoundFile menu_theme;
 
 PImage beach, forest, city, bike, corna, prize, menu;
+PImage water;
 int maxIm = 9;
 PImage [] person = new PImage[maxIm];
 int opc=0, count;
@@ -13,14 +14,13 @@ float gravedad = 0.4;
 float speed = 0;
 int imageIndex=0;
 
-
-
 beach b;
 forest f;
 city c;
 corona cor;
 prize p;
 Person p1;
+//water fp;
 void setup() {
   size(1000, 600);
 
@@ -49,9 +49,10 @@ void setup() {
   corna = loadImage("data/corona.png");
   cor = new corona(corna, 470);
 
-  prize = loadImage("data/bonus1 (2).png");
+  prize = loadImage("data/bonus.png");
   p = new prize(prize, 300);
 
+  water = loadImage("data/bonus1 (2).png");
   switch (opc) {
   case 0:
     beach_theme.play();
@@ -82,7 +83,7 @@ void draw() {
   case 1: //lvl1
     b.display();
     cor.display();
-    p.display();
+    p.clean();
     p1.move();
     p1.caida();
     float distancia = dist(p1.centroX, p1.centroY, cor.centroX, cor.centroY);
@@ -99,7 +100,7 @@ void draw() {
 
     f.display();
     cor.display();
-    p.display();
+    p.water();
     p1.move();
     p1.caida();
     break;
