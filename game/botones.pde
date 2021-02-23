@@ -1,6 +1,7 @@
 void boton() { 
   Start();
   credits();
+  intruccions();
 }
 
 void Start() {      
@@ -37,6 +38,25 @@ void credits() {
   }
   if ((mouseX>375) && (mouseX<375+250) && (mouseY>250+100) && (mouseY<250+80+70) && (mousePressed==true)) {
     opc = 5;
+    delay(500);
+  }
+}
+void intruccions() {
+
+  fill(b3, 160);
+  rect(375, 450, 250, 70, 20);
+  fill(l3);
+  textSize(30);
+  text("Intruccions", 430, 495);
+  if ((mouseX>375) && (mouseX<375+250) && (mouseY>250+200) && (mouseY<250+270)) {
+    b3=255;
+    l3=0;
+  } else {
+    b3=0;
+    l3=255;
+  }
+  if ((mouseX>375) && (mouseX<375+250) && (mouseY>250+200) && (mouseY<250+270) && (mousePressed==true)) {
+    opc = 6;
     delay(500);
   }
 }

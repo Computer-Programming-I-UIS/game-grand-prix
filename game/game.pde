@@ -2,12 +2,12 @@ import processing.sound.*;
 SoundFile beach_theme;
 SoundFile menu_theme;
 
-PImage beach, forest, city, bike, corna, prize, menu;
+PImage beach, forest, city, bike, corna, prize, menu, foto;
 PImage water;
 int maxIm = 9;
 PImage [] person = new PImage[maxIm];
 int opc=0, count;
-color b1, b2, l1, l2;
+color b1, b2, b3, l1, l2, l3;
 
 
 float gravedad = 0.4;
@@ -30,6 +30,8 @@ void setup() {
   beach = loadImage("data/playa.png");
   beach.resize(width, height);
   beach_theme = new SoundFile(this, "data/bTheme.wav");
+  
+  foto = loadImage("instruc.png");
 
   p1 = new Person(100, height-200, 160, 160);
   for (int i = 0; i < person.length; i++) {
@@ -115,6 +117,10 @@ void draw() {
   case 5:
     background(255);
     creditos();
+    break;
+  case 6:
+    background(0);
+    instrucciones();
     break;
   }
 }
