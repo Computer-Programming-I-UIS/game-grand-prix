@@ -10,7 +10,8 @@
 ## Imagenes
 ![](game/data/new%20menu.jpg)
 
-
+## Gameplay
+- https://youtu.be/dtWGMTP8jAE
 
 ## clasificacion
 ![](game/data/800px-ESRB_2013_Everyone_Spanish_opt%20(1).png)
