@@ -2,8 +2,9 @@ import processing.sound.*;
 SoundFile beach_theme;
 SoundFile menu_theme;
 
-PImage beach, forest, city, bike, corna, prize, menu, foto;
+PImage beach, forest, city, bike, corna, prize, menu;
 PImage water, death;
+PImage foto, foto2, foto3;
 int maxIm = 9;
 PImage [] person = new PImage[maxIm];
 int opc=0, count;
@@ -32,6 +33,8 @@ void setup() {
   beach_theme = new SoundFile(this, "data/bTheme.wav");
 
   foto = loadImage("instruc.png");
+  foto2 = loadImage("gameover.png");
+  foto3 = loadImage("winn.png");
 
   p1 = new Person(100, height-200, 160, 160);
   for (int i = 0; i < person.length; i++) {
@@ -141,16 +144,27 @@ void draw() {
     background(0);
     instructions();
     break;
+  case 7:
+    background(0);
+    gameover();
+    break;
+  case 8:
+    background(0);
+    winner();
+    break;
   }
   //println(count);
 }
 
 void cambio() {
-  if (count > 2000) {
+  if (count > 1000) {
     opc =2;
   }
-  if (count > 4000) {
+  if (count > 2000) {
     opc =3 ;
+  }
+  if (count > 6000) {
+    opc =8; 
   }
   //println(count);
 }
