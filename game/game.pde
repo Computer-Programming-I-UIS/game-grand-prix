@@ -3,7 +3,7 @@ SoundFile beach_theme;
 SoundFile menu_theme;
 
 PImage beach, forest, city, bike, corna, prize, menu, foto;
-PImage water;
+PImage water, death;
 int maxIm = 9;
 PImage [] person = new PImage[maxIm];
 int opc=0, count;
@@ -55,15 +55,17 @@ void setup() {
   p = new prize(prize, 300);
 
   water = loadImage("data/bonus1 (2).png");
+  death = loadImage("data/death.png");
+
   switch (opc) {
   case 0:
-    beach_theme.play();
+    //beach_theme.play();
     //menu_theme.play();
-
 
     break;
   case 1:
-    beach_theme.pause();
+
+
 
     menu_theme.pause();
 
@@ -83,6 +85,7 @@ void draw() {
     break;
 
   case 1: //lvl1
+    //beach_theme.pause();
     b.display();
     cor.covid();
     p.clean();
@@ -96,12 +99,13 @@ void draw() {
     count++;
 
 
+
     break;
 
   case 2:
-
+    //beach_theme.pause();
     f.display();
-    cor.covid();
+    cor.sars();
     p.water();
     p1.move();
     p1.caida();
@@ -117,10 +121,15 @@ void draw() {
 
   case 3:
     c.display();
-    cor.covid();
+    cor.Death();
     p.water();
     p1.move();
     p1.caida();
+    float dist3 = dist(p1.centroX, p1.centroY, cor.centroX3, cor.centroY3);
+    if (dist3 < p1.radio+cor.radio) 
+      opc = 0;
+    else 
+    count++;
     break;
 
   case 4:
@@ -144,5 +153,5 @@ void cambio() {
   if (count > 4000) {
     opc =3 ;
   }
-  println(count);
+  //println(count);
 }

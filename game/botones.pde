@@ -48,6 +48,7 @@ void intruccions() {
   fill(l3);
   textSize(30);
   text("Intruccions", 430, 495);
+  textAlign(LEFT);
   if ((mouseX>375) && (mouseX<375+250) && (mouseY>250+200) && (mouseY<250+270)) {
     b3=255;
     l3=0;
