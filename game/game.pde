@@ -1,3 +1,8 @@
+/******************************************************************************
+Autores:        Gerson Sanchez
+                Santiago Caballero
+*******************************************************************************/
+
 import processing.sound.*;
 SoundFile beach_theme;
 SoundFile menu_theme;
@@ -80,6 +85,8 @@ void draw() {
     background(0);
     image(menu, 185, 0);
     boton();
+    p1.x = 0;
+    cor.x =600;
     break;
 
   case 1: //lvl1
