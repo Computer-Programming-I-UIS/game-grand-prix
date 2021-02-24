@@ -61,14 +61,9 @@ void setup() {
   case 0:
     //beach_theme.play();
     //menu_theme.play();
-
     break;
   case 1:
-
-
-
     menu_theme.pause();
-
     break;
   case 3:
     break;
@@ -91,6 +86,7 @@ void draw() {
     p.clean();
     p1.move();
     p1.caida();
+    score();
     cambio();
     float distancia = dist(p1.centroX, p1.centroY, cor.centroX, cor.centroY);
     if (distancia < p1.radio+cor.radio)
@@ -109,6 +105,7 @@ void draw() {
     p.water();
     p1.move();
     p1.caida();
+    score();
     cambio();
     float dist2 = dist(p1.centroX, p1.centroY, cor.centroX, cor.centroY);
     if (dist2 < p1.radio+cor.radio) 
@@ -125,6 +122,7 @@ void draw() {
     p.water();
     p1.move();
     p1.caida();
+    score();
     float dist3 = dist(p1.centroX, p1.centroY, cor.centroX3, cor.centroY3);
     if (dist3 < p1.radio+cor.radio) 
       opc = 0;
@@ -141,11 +139,12 @@ void draw() {
     break;
   case 6:
     background(0);
-    instrucciones();
+    instructions();
     break;
   }
-  println(count);
+  //println(count);
 }
+
 void cambio() {
   if (count > 2000) {
     opc =2;
@@ -154,4 +153,10 @@ void cambio() {
     opc =3 ;
   }
   //println(count);
+}
+
+void score() {
+  textSize(25);
+  text("Score:", 0, 30);
+  text(nf(count), 80, 30);
 }

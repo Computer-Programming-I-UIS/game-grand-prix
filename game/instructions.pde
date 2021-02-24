@@ -1,4 +1,4 @@
-  void instrucciones() {
+  void instructions() {
   background(255);
   foto = loadImage("instruc.png");
   image(foto, 0, 0);

@@ -27,7 +27,7 @@ class corona {
   }
 
   void sars() {
-    v=17;
+    v=16;
     x -= v;
     image(prze, x, y, 100, 100);
     centroX = x + prze.width/2;
