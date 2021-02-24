@@ -13,8 +13,7 @@
 
 
 ## clasificacion
-![800px-ESRB_2013_Everyone_Spanish_opt](https://user-images.githubusercontent.com/54285794/108265590-f951ea80-7136-11eb-85ab-6f9d376d42b0.png)
-
+![](game/data/800px-ESRB_2013_Everyone_Spanish_opt%20(1).png)
 
 
 ## Agradecimientos 
