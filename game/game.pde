@@ -8,11 +8,11 @@ SoundFile beach_theme;
 SoundFile menu_theme;
 
 PImage beach, forest, city, bike, corna, prize, menu;
-PImage water, death;
+PImage water, death, s1, s2, s3, s4, next, next2;
 PImage foto, foto2, foto3;
 int maxIm = 9;
 PImage [] person = new PImage[maxIm];
-int opc=0, count;
+int opc=9, count;
 color b1, b2, b3, l1, l2, l3;
 
 
@@ -64,6 +64,11 @@ void setup() {
 
   water = loadImage("data/bonus1 (2).png");
   death = loadImage("data/death.png");
+  next = loadImage("data/next.png");
+  next2 = loadImage("data/next2.png");
+  s1 = loadImage("data/s1.jpg");
+  s2 = loadImage("data/s2.jpg");
+
 
   switch (opc) {
   case 0:
@@ -161,8 +166,13 @@ void draw() {
     background(0);
     winner();
     break;
+  case 9:
+    story1();    
+    break;
+  case 10:
+    story2();
+    break;
   }
-  //println(count);
 }
 
 void cambio() {
