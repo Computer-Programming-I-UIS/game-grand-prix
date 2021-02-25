@@ -1,7 +1,7 @@
 /******************************************************************************
-Autores:        Gerson Sanchez
-                Santiago Caballero
-*******************************************************************************/
+ Autores:        Gerson Sanchez
+ Santiago Caballero
+ *******************************************************************************/
 
 import processing.sound.*;
 SoundFile beach_theme;
@@ -85,6 +85,8 @@ void draw() {
     background(0);
     image(menu, 185, 0);
     boton();
+    count =0;
+    //cambio();
     p1.x = 0;
     cor.x =600;
     break;
@@ -164,14 +166,17 @@ void draw() {
 }
 
 void cambio() {
+  if (count == 0) {
+    opc = 1;
+  }
   if (count > 1000) {
-    opc =2;
+    opc = 2;
   }
   if (count > 2000) {
     opc =3 ;
   }
   if (count > 6000) {
-    opc =8; 
+    opc = 8;
   }
   //println(count);
 }
