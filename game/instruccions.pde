@@ -16,3 +16,26 @@ void instructions() {
 
   //delay(200);
 }
+
+void cambio() {
+  if (count == 0) {
+    opc = 1;
+  }
+  if (count > 1000) {
+    opc = 2;
+  }
+  if (count > 2000) {
+    opc =3 ;
+  }
+  if (count > 6000) {
+    opc = 8;
+  }
+
+  //println(count);
+}
+
+void score() {
+  textSize(25);
+  text("Score:", 0, 30);
+  text(nf(count+bonus), 80, 30);
+}
