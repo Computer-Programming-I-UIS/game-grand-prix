@@ -1,7 +1,7 @@
 void story1 () {
-  background(255);
-  image(s1, 150, 0, 626, 626);
-  fill(0);
+  background(0);
+  image(s1, 180, 0, 626, 626);
+  fill(255);
   textSize(25);
   text("NEXT", 900, 515);
   if (mousePressed && mouseX>900 && mouseX<965 && mouseY<515 && mouseY>490) {
@@ -11,8 +11,8 @@ void story1 () {
 }
 
 void story2() {
-  background(255);
-  image(s2, 150, 0, 626, 626);
+  background(0);
+  image(s2, 180, 0, 626, 626);
 
   text("NEXT", 900, 515);
   if (mousePressed && mouseX>900 && mouseX<965 && mouseY<515 && mouseY>490) {
