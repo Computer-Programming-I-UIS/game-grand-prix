@@ -7,6 +7,9 @@
     2192987 - Gerson Alexander Sanchez Brito
     2182788  - Santiago Caballero Niño
 
+## Descripcion
+max, acaba de recibir un correo en el que le dicen que será vacunado así que debe ir hasta la gran ciudad desde su pueblo.sin embargo, debe evitar contagiarse de covid en el camino. y además debe mantener buenas prácticas de salud y seguridad en su aventura. 
+
 ## Imagenes
 ![](game/data/new%20menu.jpg)
 
