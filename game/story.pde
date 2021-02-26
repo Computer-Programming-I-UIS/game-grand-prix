@@ -38,7 +38,7 @@ void story4() {
   fill(255);
   text("NEXT", 900, 515);
   if (mousePressed && mouseX>900 && mouseX<965 && mouseY<515 && mouseY>490) {
-    opc=0;
+    opc=6;
   }
   delay(200);
 }

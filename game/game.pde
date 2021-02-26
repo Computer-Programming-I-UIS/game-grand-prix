@@ -8,13 +8,13 @@ SoundFile beach_theme;
 SoundFile menu_theme;
 
 PImage beach, forest, city, bike, corna, prize, menu;
-PImage water, death, s1, s2, s3, s4, next, next2;
+PImage water, mask, death, s1, s2, s3, s4, next, next2;
 PImage foto, foto2, foto3;
 PImage text1;
 int maxIm = 9;
 PImage [] person = new PImage[maxIm];
-int opc=9, count,bonus;
-color b1, b2, b3, l1, l2, l3;
+int opc=9, count, bonus;
+color b1, b2, b3, b4 , l1, l2, l3, l4;
 
 
 float gravedad = 0.4;
@@ -63,26 +63,14 @@ void setup() {
   prize = loadImage("data/bonus.png");
   p = new prize(prize, 300);
 
-  water = loadImage("data/bonus1 (2).png");
+  water = loadImage("data/bonus2.png");
+  mask = loadImage("data/bonus3.png");
   death = loadImage("data/death.png");
 
   s1 = loadImage("data/s1.jpg");
   s2 = loadImage("data/s2.jpg");
   s3 = loadImage("data/s3.jpg");
   s4 = loadImage("data/s4.jpg");
-
-
-  switch (opc) {
-  case 0:
-    //beach_theme.play();
-    //menu_theme.play();
-    break;
-  case 1:
-    menu_theme.pause();
-    break;
-  case 3:
-    break;
-  }
 }
 
 void draw() {
@@ -95,12 +83,13 @@ void draw() {
     count =0;
     //cambio();
     p1.x = 0;
-    cor.x =600;
+    cor.x =1000;
     break;
 
   case 1: //lvl1
     //beach_theme.pause();
     b.display();
+    cor.v = 12;
     cor.covid();
     p.clean();
     p1.move();
@@ -116,7 +105,7 @@ void draw() {
 
     float distB1 = dist(p1.centroX, p1.centroY, p.centroX, p.centroY);
     if (distB1 < p1.radio+p.radio) {
-      bonus+=1;
+      bonus++;
     }
     println(bonus);
 
@@ -145,7 +134,7 @@ void draw() {
   case 3:
     c.display();
     cor.Death();
-    p.water();
+    p.mask_();
     p1.move();
     p1.caida();
     score();
