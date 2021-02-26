@@ -13,7 +13,7 @@ PImage foto, foto2, foto3;
 PImage text1;
 int maxIm = 9;
 PImage [] person = new PImage[maxIm];
-int opc=9, count;
+int opc=9, count,bonus;
 color b1, b2, b3, l1, l2, l3;
 
 
@@ -112,6 +112,13 @@ void draw() {
       opc = 0;
     else 
     count++;
+
+
+    float distB1 = dist(p1.centroX, p1.centroY, p.centroX, p.centroY);
+    if (distB1 < p1.radio+p.radio) {
+      bonus+=1;
+    }
+    println(bonus);
 
 
 
