@@ -10,19 +10,26 @@
 ## Descripcion
 max, acaba de recibir un correo en el que le dicen que será vacunado así que debe ir hasta la gran ciudad desde su pueblo.sin embargo, debe evitar contagiarse de covid en el camino. y además debe mantener buenas prácticas de salud y seguridad en su aventura. 
 
+## Instrucciones
+![](Captura2.JPG)
+
 ## Imagenes
-![](game/data/new%20menu.jpg)
+![](Captura3.JPG)
+![](Captura.png)
 
 ## Gameplay
 - https://youtu.be/dtWGMTP8jAE
 
 ## clasificacion
+apto para todo publico
+
+
 ![](game/data/800px-ESRB_2013_Everyone_Spanish_opt%20(1).png)
 
 
 ## Agradecimientos 
 Material grafico
-- todos los agradecimientos referentes a la parte visual del programa los encontrara en: [creditos](https://github.com/Computer-Programming-I-UIS/game-grand-prix/blob/main/game/data/creditos.txt)
+- todos lo referentes a la parte visual del programa utilizada los encontrara referenciado en: [creditos](https://github.com/Computer-Programming-I-UIS/game-grand-prix/blob/main/game/data/creditos.txt)
 
 Orientacion
 - Alex Mantilla
