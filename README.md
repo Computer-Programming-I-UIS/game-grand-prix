@@ -18,7 +18,7 @@ max, acaba de recibir un correo en el que le dicen que será vacunado así que d
 ![](Captura.png)
 
 ## Gameplay
-- https://youtu.be/dtWGMTP8jAE
+- https://youtu.be/yMRLl0tI25Q
 
 ## clasificacion
 apto para todo publico
