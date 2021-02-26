@@ -38,7 +38,7 @@ void setup() {
   beach.resize(width, height);
   beach_theme = new SoundFile(this, "data/bTheme.wav");
 
-  foto = loadImage("instruc.png");
+  foto = loadImage("inst.jpg");
   foto2 = loadImage("gameover.png");
   foto3 = loadImage("winn.png");
 
