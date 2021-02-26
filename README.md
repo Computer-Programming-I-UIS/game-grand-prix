@@ -7,6 +7,9 @@
     2192987 - Gerson Alexander Sanchez Brito
     2182788  - Santiago Caballero Niño
 
+## Descripcion
+max, acaba de recibir un correo en el que le dicen que será vacunado así que debe ir hasta la gran ciudad desde su pueblo.sin embargo, debe evitar contagiarse de covid en el camino. y además debe mantener buenas prácticas de salud y seguridad en su aventura. 
+
 ## Imagenes
 ![](game/data/new%20menu.jpg)
 
@@ -18,21 +21,8 @@
 
 
 ## Agradecimientos 
-Fondos
-- portada:https://images.app.goo.gl/ugxj6GjpQDgkVYU86
-- playa: https://images.app.goo.gl/6bf3dKq6m1AaZ78S7
-- bosque: https://images.app.goo.gl/bhGmH2H5DzqEyBWMA
-- ciudad:https://images.app.goo.gl/QeH57Vfi65iMwqgJ8
-- carretera:https://images.app.goo.gl/KzT2nVJfhNqFSaMe6
-
-Sprites
-- sprite:https://images.app.goo.gl/DVHp2SDSHe8YW5Fi8
-- coronavirus: https://images.app.goo.gl/djtH2gsxYfberzMM9
-- bonus 1: https://images.app.goo.gl/gXcSnWV5jEk8QpFU6
-- bonus 2: https://images.app.goo.gl/NUNyVC6UetoVPgxH7
-
-Musica
-- fondo: https://youtu.be/0hEYvdMoF2g
+Material grafico
+- todos los agradecimientos referentes a la parte visual del programa los encontrara en: [creditos](https://github.com/Computer-Programming-I-UIS/game-grand-prix/blob/main/game/data/creditos.txt)
 
 Orientacion
 - Alex Mantilla
