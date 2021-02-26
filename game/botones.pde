@@ -3,6 +3,7 @@ void boton() {
   credits();
   intruccions();
   salida();
+  
 }
 
 void Start() {      

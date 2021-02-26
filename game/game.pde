@@ -14,7 +14,7 @@ PImage text1;
 int maxIm = 9;
 PImage [] person = new PImage[maxIm];
 int opc=9, count, bonus;
-color b1, b2, b3, b4 , l1, l2, l3, l4;
+color b1, b2, b3, b4, l1, l2, l3, l4;
 
 
 float gravedad = 0.4;
@@ -71,6 +71,9 @@ void setup() {
   s2 = loadImage("data/s2.jpg");
   s3 = loadImage("data/s3.jpg");
   s4 = loadImage("data/s4.jpg");
+
+  menu_theme.play();
+  beach_theme.loop();
 }
 
 void draw() {
@@ -81,7 +84,7 @@ void draw() {
     image(menu, 185, 0);
     boton();
     count =0;
-    //cambio();
+    bonus=0;
     p1.x = 0;
     cor.x =1000;
     break;
@@ -98,7 +101,7 @@ void draw() {
     cambio();
     float distancia = dist(p1.centroX, p1.centroY, cor.centroX, cor.centroY);
     if (distancia < p1.radio+cor.radio)
-      opc = 0;
+      opc = 7;
     else 
     count++;
 
@@ -108,8 +111,6 @@ void draw() {
       bonus++;
     }
     println(bonus);
-
-
 
     break;
 
@@ -124,10 +125,15 @@ void draw() {
     cambio();
     float dist2 = dist(p1.centroX, p1.centroY, cor.centroX, cor.centroY);
     if (dist2 < p1.radio+cor.radio) 
-      opc = 0;
+      opc = 7;
     else 
     count++;
 
+    float distB2 = dist(p1.centroX, p1.centroY, p.centroX2, p.centroY2);
+    if (distB2 < p1.radio+p.radioB2) {
+      bonus++;
+    }
+    println(bonus);
 
     break;
 
@@ -140,7 +146,7 @@ void draw() {
     score();
     float dist3 = dist(p1.centroX, p1.centroY, cor.centroX3, cor.centroY3);
     if (dist3 < p1.radio+cor.radio) 
-      opc = 0;
+      opc = 7;
     else 
     count++;
     break;
@@ -165,7 +171,8 @@ void draw() {
     winner();
     break;
   case 9:
-    story1();    
+    story1();
+    beach_theme.stop();
     break;
   case 10:
     story2();
@@ -192,11 +199,13 @@ void cambio() {
   if (count > 6000) {
     opc = 8;
   }
+
+  
   //println(count);
 }
 
 void score() {
   textSize(25);
   text("Score:", 0, 30);
-  text(nf(count), 80, 30);
+  text(nf(count+bonus), 80, 30);
 }

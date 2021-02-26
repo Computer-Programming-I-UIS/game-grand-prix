@@ -6,7 +6,7 @@ class prize {
   float centroX, centroY;
   float centroX2, centroY2;
   float centroX3, centroY3;
-  float radio=0.2, radioB2 = 160;
+  float radio=0.2, radioB2 = 0.1;
   prize (PImage pr, float Y) {
     y=Y;
     clean = pr;
@@ -17,7 +17,7 @@ class prize {
     image(clean, x, y, 40, 100);
     centroX = x;
     centroY = y;
-    circle(centroX, centroY, radio);
+    circle(centroX, centroY, radioB2);
 
 
     if ( x <=  0) {
@@ -27,6 +27,9 @@ class prize {
   void water() {
     x -= v;
     image(water, x, y+20);
+    centroX2 = x+80/2;
+    centroY2 = y;
+    circle(centroX2, centroY, radio);
 
     if ( x <=  0) {
       x =int(random(width, width+(width/2)));
