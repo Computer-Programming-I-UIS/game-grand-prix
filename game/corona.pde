@@ -1,7 +1,6 @@
 class corona {
   PImage prze;
   float y;
-  int space = width;
   int x = width;
   float v = 12;
   float centroX, centroY;

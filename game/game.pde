@@ -8,7 +8,7 @@ SoundFile beach_theme;
 SoundFile menu_theme;
 
 PImage beach, forest, city, bike, corna, prize, menu;
-PImage water, mask, death, s1, s2, s3, s4, next, next2;
+PImage water, mask, death, s1, s2, s3, s4, clasif;
 PImage foto, foto2, foto3;
 PImage text1;
 int maxIm = 9;
@@ -71,6 +71,7 @@ void setup() {
   s2 = loadImage("data/s2.jpg");
   s3 = loadImage("data/s3.jpg");
   s4 = loadImage("data/s4.jpg");
+  clasif = loadImage("data/800px-ESRB_2013_Everyone_Spanish_opt (1).png");
 
   menu_theme.play();
   beach_theme.loop();
@@ -82,6 +83,7 @@ void draw() {
   case 0: //menu
     background(0);
     image(menu, 185, 0);
+    image(clasif ,185,600-150,100,150);
     boton();
     count =0;
     bonus=0;
@@ -149,6 +151,11 @@ void draw() {
       opc = 7;
     else 
     count++;
+    
+    float distB3 = dist(p1.centroX, p1.centroY, p.centroX3, p.centroY3);
+    if (distB3 < p1.radio+p.radioB3) {
+      bonus++;
+    }
     break;
 
   case 4:

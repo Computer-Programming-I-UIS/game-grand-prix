@@ -14,7 +14,7 @@ void instructions() {
   p1.move();
   p1.caida();
 
-  //delay(200);
+  delay(200);
 }
 
 void cambio() {
