@@ -1,6 +1,6 @@
 
 
-![titulo](https://user-images.githubusercontent.com/54285794/108218578-c988ef80-7102-11eb-8e64-f80488316640.png)
+![titulo](https://github.com/Computer-Programming-I-UIS/game-grand-prix/blob/main/game/data/titulo.png)
 
 ## Autores:
 
@@ -8,7 +8,18 @@
     2182788  - Santiago Caballero Niño
 
 ## Descripcion
+
 max, acaba de recibir un correo en el que le dicen que será vacunado así que debe ir hasta la gran ciudad desde su pueblo.sin embargo, debe evitar contagiarse de covid en el camino. y además debe mantener buenas prácticas de salud y seguridad en su aventura. 
+
+<p align="center"> 
+    <br>
+    <img src = "https://github.com/Computer-Programming-I-UIS/game-grand-prix/blob/main/game/data/banner.jpg">
+    
+</p>
+
+
+
+
 
 ## Instrucciones
 ![](Captura_2.JPG)
