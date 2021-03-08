@@ -11,7 +11,7 @@
 max, acaba de recibir un correo en el que le dicen que será vacunado así que debe ir hasta la gran ciudad desde su pueblo.sin embargo, debe evitar contagiarse de covid en el camino. y además debe mantener buenas prácticas de salud y seguridad en su aventura. 
 
 ## Instrucciones
-![](Captura2.JPG)
+![](Captura_2.JPG)
 
 ## Imagenes
 ![](Captura3.JPG)
