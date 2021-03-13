@@ -1,0 +1,23 @@
+Fondos
+portada:https://images.app.goo.gl/ugxj6GjpQDgkVYU86
+playa: https://images.app.goo.gl/6bf3dKq6m1AaZ78S7
+bosque: https://images.app.goo.gl/bhGmH2H5DzqEyBWMA
+ciudad:https://images.app.goo.gl/QeH57Vfi65iMwqgJ8
+carretera:https://images.app.goo.gl/KzT2nVJfhNqFSaMe6
+historia: https://images.app.goo.gl/CdLZPrt29ZLJGbK27
+carta:https://images.app.goo.gl/kHqLdKCY41X9jeDLA
+doctor:https://images.app.goo.gl/vxGhKNBP2BoaZzTa8
+
+Sprites
+sprite:https://images.app.goo.gl/DVHp2SDSHe8YW5Fi8
+coronavirus: https://images.app.goo.gl/djtH2gsxYfberzMM9
+death: https://images.app.goo.gl/pgx6C8vbYXKcauTv8
+bonus 1: https://images.app.goo.gl/gXcSnWV5jEk8QpFU6
+bonus 2: https://images.app.goo.gl/NUNyVC6UetoVPgxH7
+bonus 3: https://images.app.goo.gl/WHy4x4eLvVpknyb47
+
+
+Musica
+story: https://youtu.be/aWTtLUeODLQ
+fondo: https://youtu.be/0hEYvdMoF2g
+
